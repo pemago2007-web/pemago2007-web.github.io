@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Macías González · Portfolio</title>
+  <meta name="description" content="Portfolio de Pedro Macías González, estudiante de Desarrollo de Aplicaciones Web en Málaga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <nav class="nav contenedor">
+      <a href="#inicio" class="logo">PM<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero contenedor">
+      <div class="hero-texto">
+        <p class="etiqueta">Desarrollador de Aplicaciones Web &lt; &gt;</p>
+        <h1>Hola, soy <span>Pedro Macías</span></h1>
+        <p class="intro">
+          Estudiante de 2º del Grado Superior en Desarrollo de Aplicaciones Web en Digitech FP (Málaga).
+          Me gusta construir webs claras y útiles, y tengo muchas ganas de seguir aprendiendo y aportar en un entorno profesional.
+        </p>
+        <div class="botones">
+          <a href="#proyectos" class="boton">Ver proyectos</a>
+          <a href="#contacto" class="boton boton-sec">Contactar</a>
+        </div>
+      </div>
+      <img src="img/foto.jpg" alt="Foto de Pedro Macías González" class="hero-foto">
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion contenedor">
+      <h2>Proyectos</h2>
+      <p class="sub">Trabajos que he hecho durante el ciclo. Las webs se pueden abrir y probar.</p>
+
+      <div class="grid">
+
+        <article class="card destacada">
+          <div class="card-img placeholder feria">
+            <span>MiFeria</span>
+            <small>En desarrollo</small>
+          </div>
+          <div class="card-cuerpo">
+            <p class="card-meta">Proyecto final de ciclo · 2026–2027</p>
+            <h3>MiFeria — Guía web de la Feria de Málaga</h3>
+            <p>
+              Aplicación web para moverse por la Feria: mapa interactivo de casetas, programación del Centro y del Real,
+              favoritos, plan personal, valoraciones y avisos en tiempo real. Tiene 4 roles de usuario con permisos
+              (visitante, usuario, gestor de caseta y administrador).
+            </p>
+            <ul class="tags">
+              <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>API REST</li><li>Leaflet</li><li>WebSockets</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="proyectos/malaga-live/index.html" target="_blank" class="card-img">
+            <img src="img/malaga-live.jpg" alt="Captura de la web Málaga Live" loading="lazy">
+          </a>
+          <div class="card-cuerpo">
+            <p class="card-meta">Lenguaje de Marcas · 1º DAW</p>
+            <h3>Málaga Live</h3>
+            <p>Web de venta de entradas para conciertos de música urbana en Málaga, con tarjetas de artistas, ofertas y maquetación con Flexbox.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>Flexbox</li></ul>
+            <a href="proyectos/malaga-live/index.html" target="_blank" class="enlace">Ver web →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="proyectos/jamones-jumago/index.html" target="_blank" class="card-img">
+            <img src="img/jamones-jumago.jpg" alt="Captura de la web Jamones Jumago" loading="lazy">
+          </a>
+          <div class="card-cuerpo">
+            <p class="card-meta">Entorno Cliente y Lenguaje de Marcas · 1º DAW</p>
+            <h3>Jamones Jumago</h3>
+            <p>Web para una tienda gourmet del Centro Comercial Vialia: menú hamburguesa, catálogo y formulario de pedidos con validación en JavaScript.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive</li></ul>
+            <a href="proyectos/jamones-jumago/index.html" target="_blank" class="enlace">Ver web →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="proyectos/gimnasio-ym/index.html" target="_blank" class="card-img">
+            <img src="img/gimnasio-ym.jpg" alt="Captura de la web del gimnasio YM" loading="lazy">
+          </a>
+          <div class="card-cuerpo">
+            <p class="card-meta">Proyecto de 3º trimestre · 1º DAW</p>
+            <h3>Gimnasio YM</h3>
+            <p>Web de varias páginas para un gimnasio: actividades, productos y contacto, con menú desplegable y secciones que se muestran u ocultan con JavaScript.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>DOM</li></ul>
+            <a href="proyectos/gimnasio-ym/index.html" target="_blank" class="enlace">Ver web →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="proyectos/cafe-romano/index.html" target="_blank" class="card-img">
+            <img src="img/cafe-romano.jpg" alt="Captura de la web Café Romano" loading="lazy">
+          </a>
+          <div class="card-cuerpo">
+            <p class="card-meta">Lenguaje de Marcas · 1º DAW</p>
+            <h3>Café Romano</h3>
+            <p>Mi primera web completa: la página de una cafetería con cabecera, banner, secciones de productos y pie de página.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+            <a href="proyectos/cafe-romano/index.html" target="_blank" class="enlace">Ver web →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="https://github.com/pemago2007-web/-ED_4.1_MiniInventario" target="_blank" class="card-img placeholder codigo">
+            <code>public class Main {<br>&nbsp;&nbsp;// MiniInventario<br>}</code>
+          </a>
+          <div class="card-cuerpo">
+            <p class="card-meta">Entornos de Desarrollo · 1º DAW</p>
+            <h3>MiniInventario</h3>
+            <p>Aplicación de consola en Java para gestionar productos: añadir, listar y buscar por nombre. Proyecto para practicar Git y GitHub.</p>
+            <ul class="tags"><li>Java</li><li>Git</li><li>GitHub</li></ul>
+            <a href="https://github.com/pemago2007-web/-ED_4.1_MiniInventario" target="_blank" class="enlace">Ver en GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="seccion contenedor">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p>HTML, CSS (Flexbox y Grid), JavaScript y manejo del DOM, diseño responsive.</p>
+        </div>
+        <div class="skill">
+          <h3>Backend y Java</h3>
+          <p>Java con interfaces Swing, ficheros y JDBC. PHP para el proyecto final.</p>
+        </div>
+        <div class="skill">
+          <h3>Bases de datos</h3>
+          <p>MySQL, PostgreSQL y MariaDB: diseño, consultas, vistas, triggers y procedimientos.</p>
+        </div>
+        <div class="skill">
+          <h3>Herramientas</h3>
+          <p>Git y GitHub, Visual Studio Code, IntelliJ IDEA. Windows y Linux (Ubuntu). XML y JSON.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion contenedor contacto">
+      <h2>Contacto</h2>
+      <p class="sub">¿Te interesa mi perfil? Escríbeme.</p>
+      <div class="botones">
+        <a href="mailto:pemago2007@gmail.com" class="boton">pemago2007@gmail.com</a>
+        <a href="https://github.com/pemago2007-web" target="_blank" class="boton boton-sec">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Pedro Macías González · Málaga</p>
+  </footer>
+
+</body>
+</html>

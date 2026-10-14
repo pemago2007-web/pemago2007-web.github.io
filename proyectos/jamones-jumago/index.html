@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamones Jumago | Vialia Málaga</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header id="cabecera">
+        <div class="contenedor-header">
+
+            <button id="btn-menu" class="material-symbols-outlined icono-cabecera">menu</button>
+            <button id="btn-cesta" class="material-symbols-outlined icono-cabecera">shopping_basket</button>
+            <div class="logo">
+                <h1>JAMONES JUMAGO</h1>
+                <span>Gourmet - CC Vialia Málaga</span>
+            </div>
+            <nav id="navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Nuestros Cortados</a>
+                <a href="#contacto">Pedidos y Citas</a>
+            </nav>
+        </div>
+        <aside id="carrito-lateral">
+        <h3>Tu Cesta Gourmet</h3>
+        <ul class="productos-carrito">
+            <li>
+                <strong>1x Blíster Jamón Bellota (100g)</strong>
+                <span>14,50 €</span>
+            </li>
+            <li>
+                <strong>1x Cuña Queso de Oveja Viejo</strong>
+                <span>8,90 €</span>
+            </li>
+            <li>
+                <strong>1x Picos Artesanos Jerezanos</strong>
+                <span>1,50 €</span>
+            </li>
+        </ul>
+        <div class="total-carrito">
+            <strong>Total simulado:</strong>
+            <span>24,90 €</span>
+        </div>
+        <button class="boton-gourmet">Proceder al Pago</button>
+    </aside>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion-hero">
+            <div class="contenido-hero">
+                <h2>El Arte del Jamón Ibérico en el Corazón de Málaga</h2>
+                <p>Visítanos en el Centro Comercial Vialia. Selección exclusiva de piezas, embutidos artesanos y
+                    servicio profesional de corte a cuchillo.</p>
+                <a href="#contacto" class="boton-gourmet">Reservar Cortador</a>
+            </div>
+        </section>
+
+        <section id="productos" class="seccion-productos">
+            <h3 class="titulo-seccion">Especialidades Destacadas</h3>
+
+            <div class="contenedor-flex">
+                <article class="tarjeta-producto">
+                    <div class="imagen-placeholder">Ibéricos de Bellota</div>
+                    <h4>Jamón de Bellota 100% Ibérico</h4>
+                    <p>Piezas seleccionadas en bodega con una curación óptima. Sabor intenso y veteado perfecto.</p>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <div class="imagen-placeholder">Servicio Exclusivo</div>
+                    <h4>Corte a Cuchillo y Envasado</h4>
+                    <p>Llevate tu pieza perfectamente loncheada a mano por nuestros maestros cortadores en Vialia.</p>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <div class="imagen-placeholder">Lotes Regalo</div>
+                    <h4>Estuches Gourmet Jumago</h4>
+                    <p>Combinaciones perfectas de jamón, embutido premium y maridajes para ocasiones especiales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <h3 class="titulo-seccion">Contacto y Encargos</h3>
+            <p class="subtitulo-formulario">Haz tu pedido para recoger en tienda o reserva tu cortador para eventos.</p>
+
+            <form id="formulario-contacto" novalidate>
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="mensaje">Detalles de tu encargo o consulta:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        placeholder="¿Qué pieza o servicio necesitas?"></textarea>
+                </div>
+
+                <button type="submit" id="btn-enviar" class="boton-gourmet">Enviar Solicitud</button>
+                <p id="mensaje-feedback" class="mensaje-oculto"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jamones Jumago &copy; 2026 - Centro Comercial Vialia, Málaga</p>
+        <p>Localización: Estación María Zambrano | Horario: 10:00 - 22:00</p>
+    </footer>
+
+    <script src="jss/scripts.js"></script>
+</body>
+
+</html>

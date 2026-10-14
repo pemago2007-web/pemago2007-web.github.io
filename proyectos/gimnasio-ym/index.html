@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logo.webp" alt="Logo">
+        <span class="material-symbols-outlined">menu</span>
+        <nav class="flex">
+            <ul id="contenidoMenu" class="flex contenidoMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#actividades">Actividades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="actDest">
+            <div class="actDest-items">
+                <span>Horarios</span>
+            </div>
+            <div>
+                <span>Beneficios de cada actividad</span>
+            </div>
+            <div>
+                <span>Recomendaciones para principiantes</span>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+
+        <section id="actividades" class="cont-1">
+            <h2 class="titulo">ACTIVIDADES</h2>
+            <div class="subCont-1">
+                <article class="acts">
+                    <img src="img/news-1.webp" alt="">
+                    <h3>Musculación</h3>
+                    <p>¡Disfruta de nuestras clases de musculación!</p>
+                    <strong><button>Más información</button></strong>
+                </article>
+
+                <article class="acts">
+                    <img src="img/news-2.webp" alt="">
+                    <h3>CrossFit</h3>
+                    <p>¡Disfruta de nuestras clases de CrossFit!</p>
+                    <strong><button>Más información</button></strong>
+                </article>
+
+                <article class="acts">
+                    <img src="img/news-3.webp" alt="">
+                    <h3>Spinning</h3>
+                    <p>¡Disfruta de nuestras clases de Spinning!</p>
+                    <strong><button>Más información</button></strong>
+                </article>
+            </div>
+
+            <div class="acts-btn">
+                    <strong><a href="#inicio" class="btnDest-2">ACTIVIDADES DESTACADAS</a></strong>
+            </div>
+
+        </section>
+
+        <section id="contacto" class="cont-2">
+            <h2>CONTACTO</h2>
+            <form action="/enviar" method="post">
+                <div class="lineas-text">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input required placeholder="Tu nombre">
+                </div>
+                <div class="lineas-text">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input required placeholder="ejemplo@correo.com">
+                </div>
+                <div class="lineas-text">
+                    <label for="mensaje">Detalles de tu consulta:</label>
+                    <input required placeholder="¿Qué necesitas?">
+                </div>
+
+                <div class="form-btn">
+                    <strong><a href="#inicio" class="btn-enviar">ENVIAR SOLICITUD</a></strong>
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>FitLife Gym</p>
+    </footer>
+
+</body>
+
+
+
+</html>

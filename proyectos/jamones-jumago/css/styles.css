@@ -1,0 +1,344 @@
+/* --- VARIABLES Y CONFIGURACIÓN BASE --- */
+:root {
+    --color-primario: #6b1426; /* Tono vino/jamón curado elegante */
+    --color-dorado: #bea05e;   /* Toque premium gourmet */
+    --color-oscuro: #1c1c1c;   /* Fondos oscuros elegantes */
+    --color-claro: #fcfbfa;    /* Fondo limpio */
+    --color-gris: #757575;
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-base);
+    background-color: var(--color-claro);
+    color: var(--color-oscuro);
+    line-height: 1.6;
+}
+
+/* --- CABECERA (position: sticky como en tus apuntes) --- */
+#cabecera {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-oscuro);
+    color: white;
+    padding: 15px 20px;
+    z-index: 10;
+    border-bottom: 2px solid var(--color-dorado);
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--color-dorado);
+}
+
+.logo span {
+    font-size: 0.8rem;
+    color: #ccc;
+    display: block;
+}
+
+#navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#navegacion a:hover {
+    color: var(--color-dorado);
+}
+
+/* --- HERO SECTION --- */
+.seccion-hero {
+    background-color: #2a080f; /* Color de respaldo */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contenido-hero {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenido-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-dorado);
+}
+
+.contenido-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* --- MAQUETACIÓN FLEXBOX (Sustituye a Grid para cumplir tus apuntes) --- */
+.seccion-productos, .seccion-contacto {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primario);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que baje si la pantalla es pequeña */
+}
+
+.tarjeta-producto {
+    background: white;
+    border: 1px solid #eee;
+    padding: 20px;
+    width: 31%; /* Deja margen para el espacio intermedio */
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.imagen-placeholder {
+    background-color: var(--color-primario);
+    color: var(--color-dorado);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tarjeta-producto h4 {
+    margin-bottom: 10px;
+    color: var(--color-oscuro);
+}
+
+/* --- BOTONES PREMIUM --- */
+.boton-gourmet {
+    display: inline-block;
+    background-color: var(--color-dorado);
+    color: var(--color-oscuro);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.boton-gourmet:hover {
+    background-color: #a68a4c;
+    color: white;
+}
+
+/* --- FORMULARIO DE CONTACTO --- */
+#formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-top: 4px solid var(--color-primario);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grupo-campo input, .grupo-campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: var(--fuente-base);
+}
+
+/* Clases de feedback para JavaScript */
+.mensaje-oculto {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.exito {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--color-oscuro);
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+.icono-cabecera {
+    background: none;
+    border: none;
+    color: var(--color-dorado);
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#btn-menu {
+    display: none; /* En escritorio el botón de menú está oculto */
+}
+
+/* Ajuste del menú en escritorio para que use el formato UL de forma horizontal */
+#navegacion ul {
+    display: flex;
+    list-style: none;
+}
+#navegacion ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+#navegacion ul li a:hover {
+    color: var(--color-dorado);
+}
+
+/* --- PANEL DE LA CESTA LATERAL --- */
+#carrito-lateral {
+    position: fixed;
+    top: 78px; /* Ajustado para que empiece justo debajo de la cabecera */
+    right: -320px; /* Completamente escondido a la derecha en el inicio */
+    width: 300px;
+    height: calc(100vh - 78px);
+    background-color: white;
+    border-left: 3px solid var(--color-dorado);
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    z-index: 99;
+    padding: 20px;
+    transition: right 0.3s ease; /* Efecto deslizamiento suave lateral */
+}
+
+/* Clase que añadiremos con JavaScript para mostrar la cesta */
+#carrito-lateral.mostrar-carrito {
+    right: 0;
+}
+
+#carrito-lateral h3 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.productos-carrito {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.productos-carrito li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+.total-carrito {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--color-oscuro);
+}
+
+
+/* --- RESPONSIVE / MEDIA QUERY (MÓVIL) --- */
+@media (max-width: 768px) {
+    #btn-menu {
+        display: block; /* El botón hamburguesa se hace visible */
+    }
+
+    .contenedor-header {
+        position: relative; /* Para poder posicionar el menú desplegable de forma absoluta */
+    }
+
+    /* Ocultamos el 'ul' original y lo preparamos para desplegar verticalmente */
+    #navegacion ul {
+        display: none; /* Se oculta por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 63px; /* Se posiciona justo pegado debajo del header */
+        left: -20px;
+        width: calc(100% + 40px); /* Ocupa todo el ancho de la pantalla móvil */
+        background-color: var(--color-oscuro);
+        border-bottom: 2px solid var(--color-dorado);
+        padding: 15px 0;
+        text-align: center;
+        z-index: 98;
+    }
+
+    #navegacion ul li {
+        margin: 12px 0;
+    }
+
+    #navegacion ul li a {
+        margin-left: 0;
+        font-size: 1.1rem;
+    }
+
+    /* Clase que añadiremos con JS para que el menú despliegue hacia abajo */
+    #navegacion ul.mostrar-menu {
+        display: flex; /* Al activarse cambia de 'none' a 'flex' vertical */
+    }
+
+    /* Adaptación del carrito en pantallas móviles pequeñas */
+    #carrito-lateral {
+        top: 74px;
+        width: 100%; /* Ocupa toda la pantalla en móvil al abrirse */
+        right: -100%;
+    }
+    #carrito-lateral.mostrar-carrito {
+        right: 0;
+    }
+}
